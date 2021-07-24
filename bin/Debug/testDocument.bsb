@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+    <Cards>
+        <card id="0" x="50" y="50" color="0" expanded="False">
+            <title>New Card</title>
+            <text>Esto es nuevo</text>
+        </card>
+        <card id="1" x="50" y="150" color="3" expanded="False">
+            <title>asdasdasd</title>
+            <text>adasdasd</text>
+        </card>
+    </Cards>
+    <Links>
+        <link id1="0" id2="1" />
+    </Links>
+</Document>

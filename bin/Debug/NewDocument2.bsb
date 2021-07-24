@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+    <Cards>
+        <card id="0" x="111" y="124" color="0" expanded="True">
+            <title>Titulo aqui</title>
+            <text>Nota aqui</text>
+        </card>
+    </Cards>
+    <Links />
+</Document>
