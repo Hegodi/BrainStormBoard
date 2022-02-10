@@ -132,8 +132,28 @@ namespace BrainStormBoard
         public Point GetAnchorPosition(Point target)
         {
             Point p = Location;
-            p.X += Width / 2;
-            p.Y += 30;
+            float dX = Location.X - target.X;
+            float dY = Location.Y - target.Y;
+
+            if (dX >= 0.0f && Math.Abs(dY) <= dX)
+            {
+                p.Y += Height / 2;
+            }
+            else if (dX <= 0.0f && Math.Abs(dY) <= -dX)
+            {
+                p.Y += Height / 2;
+                p.X += Width;
+            }
+            else if (dY > 0.0f && Math.Abs(dX) < dY)
+            {
+                p.X += Width / 2;
+            }
+            else if (dY < 0.0f && Math.Abs(dX) < -dY)
+            {
+                p.X += Width / 2;
+                p.Y += Height;
+            }
+
             return p;
         }
 
